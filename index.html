@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Task Manager</h1>
+            <p class="subtitle">Manage your tasks with reminders</p>
+        </header>
+
+        <div class="add-task-container">
+            <div class="add-task">
+                <input type="text" id="taskInput" placeholder="Enter a new task">
+                <input type="datetime-local" id="deadlineInput" title="Set deadline">
+                <button id="addTask">Add Task</button>
+            </div>
+            <div class="notification-permission">
+                <button id="enableNotifications">Enable Notifications</button>
+            </div>
+        </div>
+
+        <div class="tasks-container">
+            <div class="tasks-header">
+                <h2>Tasks</h2>
+                <div class="filter-buttons">
+                    <button id="showAll" class="active">All</button>
+                    <button id="showPending">Pending</button>
+                    <button id="showCompleted">Completed</button>
+                </div>
+            </div>
+            <div id="taskList"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
